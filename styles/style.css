@@ -4,6 +4,15 @@
   box-sizing: border-box;
 }
 
+::-moz-selection {
+  /* Code for Firefox */
+  background-color: aquamarine;
+}
+
+::selection {
+  background-color: aquamarine;
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 body::-webkit-scrollbar {
   display: none;
@@ -82,7 +91,6 @@ p {
 a:hover {
   color: black;
   background-color: aquamarine;
-  transition: 0.5s;
 }
 
 article {

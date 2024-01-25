@@ -1,99 +1,101 @@
-/* RESET */
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* WEB ELEMENTS */
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-li,
-a,
-p {
-  font-family: "Source Code Pro";
-  font-size: 16px;
-  font-weight: 500;
-  color: rgb(0, 0, 0);
-  text-decoration: none;
-  list-style: none;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none; /* Standard syntax */
+/* Hide scrollbar for Chrome, Safari and Opera */
+body::-webkit-scrollbar {
+  display: none;
 }
 
-body,
-main {
-  display: flex;
-  flex-direction: column;
+/* Hide scrollbar for IE, Edge and Firefox */
+body {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+body {
   background-color: rgb(255, 255, 255);
 }
 
+header nav {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+footer nav {
+  width: 100%;
+  padding: 0 20px;
+  display: flex;
+  column-gap: 20px;
+  justify-content: center;
+}
+
 header {
-  position: fixed;
   top: 0;
+  width: 100%;
+  position: fixed;
+  align-items: center;
+  display: flex;
+  height: 66px;
 }
 
 main {
-  margin: 60px 0;
-}
-
-header,
-main,
-footer {
-  width: 100%;
-  padding: 0 20px;
-}
-
-section,
-article {
+  height: 1600px;
   display: flex;
-  flex-direction: column;
-  row-gap: 20px;
-  padding-top: 80px;
-  padding-bottom: 20px;
+  justify-content: center;
+  margin-top: 66px;
 }
 
-header,
 footer {
-  height: 60px;
+  align-items: center;
+  justify-content: center;
   display: flex;
   column-gap: 20px;
-  align-items: center;
-}
-
-p {
-  max-width: 600px;
+  height: 66px;
 }
 
 a,
-li {
-  display: block;
+h1 {
   width: fit-content;
+  font-family: "Source Code Pro", monospace;
+  font-weight: 900;
+  font-size: 12px;
+  line-height: 100%;
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  padding: 7px 10px;
 }
 
-nav {
+p {
+  font-family: "Source Code Pro", monospace;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: auto;
+}
+
+a:hover {
+  color: black;
+  background-color: aquamarine;
+  transition: 0.5s;
+}
+
+article {
+  max-width: 640px;
   display: flex;
-  column-gap: 20px;
+  flex-direction: column;
+  row-gap: 20px;
+  padding: 0 20px;
 }
 
-/* HOVER */
-
-.hover:hover {
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
-}
-
-/* CLASS */
-
-.black {
-  width: fit-content;
-  background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+img {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
 }
